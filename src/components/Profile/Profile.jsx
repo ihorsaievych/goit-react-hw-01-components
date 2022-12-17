@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import css from './Profile.module.css';
 
-function Profile({ username, tag, location, avatar, stats }) {
+export function Profile({ username, tag, location, avatar, stats }) {
   return (
     <div className={css['profile']}>
       <div class={css['description']}>
@@ -42,5 +42,3 @@ Profile.propTypes = {
   avatar: PropTypes.string,
   stats: PropTypes.objectOf(PropTypes.number),
 };
-
-export default Profile;
