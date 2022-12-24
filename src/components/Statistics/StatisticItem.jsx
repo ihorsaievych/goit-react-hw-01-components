@@ -1,12 +1,16 @@
-//import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
+import { Item, Percentage, Label } from 'components';
 
-export function StatisticsItem({ label, percentage }) {
+export function StatisticsItem({ title, total }) {
   return (
-    <li class="item">
-      <span class="label">{label}</span>
-      <span class="percentage">{percentage}</span>
-    </li>
+    <Item label={title}>
+      <Label>{title}</Label>
+      <Percentage>{total}%</Percentage>
+    </Item>
   );
 }
 
-StatisticsItem.propTypes = {};
+StatisticsItem.propTypes = {
+  title: PropTypes.string.isRequired,
+  total: PropTypes.number.isRequired,
+};

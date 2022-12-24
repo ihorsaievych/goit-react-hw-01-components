@@ -5,3 +5,8 @@ export * from 'components/Profile/Profile';
 export * from 'components/Statistics/Statistics';
 export * from 'components/Statistics/Statistics.styled';
 export * from 'components/Statistics/StatisticItem';
+export * from 'components/Friends/FriendList';
+export * from 'components/Friends/FriendList.styled';
+export * from 'components/Friends/FriendListItem';
+export * from 'components/Transactions/TransactionHistory';
+export * from 'components/Transactions/TransactionsHistory.styled';
