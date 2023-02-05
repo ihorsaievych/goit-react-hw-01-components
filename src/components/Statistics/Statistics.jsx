@@ -11,7 +11,7 @@ export function Statistics({ title, stats }) {
   return (
     <SectionStatistics>
       <ContainerStatistics>
-        <TitleH2>{title}</TitleH2>
+        {title.length > 0 && <TitleH2>{title}</TitleH2>}
         <StatList>
           {stats.map(({ id, label, percentage }) => (
             <StatisticsItem key={id} title={label} total={percentage} />
