@@ -4,13 +4,13 @@ import { Item, Percentage, Label } from 'components';
 export function StatisticsItem({ title, total }) {
   return (
     <Item label={title}>
-      <Label>{title}</Label>
+      {title.length > 0 && <Label>{title}</Label>}
       <Percentage>{total}%</Percentage>
     </Item>
   );
 }
 
 StatisticsItem.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   total: PropTypes.number.isRequired,
 };
